@@ -49,7 +49,7 @@ export class ServerlessOpenApiDocumentation {
    * @param serverless
    * @param options
    */
-  public constructor(serverless: FullServerless, options) {
+  public constructor(serverless, options) {
     // pull the serverless instance into our class vars
     this.serverless = serverless;
     // Serverless service custom variables
@@ -80,6 +80,13 @@ export class ServerlessOpenApiDocumentation {
         }
       }
     };
+
+    // Create schema for your properties. For reference use https://github.com/ajv-validator/ajv
+    serverless.configSchemaHandler.defineFunctionEventProperties('aws', 'http', {
+      properties: {
+        documentation: { type: 'object' },
+      }
+    });
 
     // Declare the hooks our plugin is interested in
     this.hooks = {

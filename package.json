@@ -1,22 +1,12 @@
 {
-  "name": "@conqa/serverless-openapi-documentation",
-  "version": "1.1.0",
+  "name": "grvsls-openapi-documentation",
+  "version": "0.0.1",
   "description": "Serverless 1.0 plugin to generate OpenAPI V3 documentation from serverless configuration",
   "main": "index.js",
   "engines": {
     "node": ">=6.0.0",
     "npm": ">=3.8.6"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/conqa/serverless-openapi-documentation.git"
-  },
-  "bugs": "https://github.com/conqa/serverless-openapi-documentation/issues",
-  "author": "Abilio Henrique <abilio.henrique@temando.com>",
-  "contributors": [
-    "Abilio Henrique <abilio.henrique@temando.com>",
-    "nfour <novus.nfour@gmail.com>"
-  ],
   "keywords": [
     "OpenAPI",
     "swagger",
@@ -58,7 +48,7 @@
     "jest": "^24.8.0",
     "openapi-types": "^1.3.4",
     "prettier": "^1.17.0",
-    "serverless": "^1.41.1",
+    "serverless": "^2.52.0",
     "ts-jest": "^24.0.2",
     "ts-node": "^3.1.0",
     "typescript": "^3.4.5",
